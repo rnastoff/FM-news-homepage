@@ -1,0 +1,32 @@
+.news {
+  height: 805px;
+  width: 1110px;
+}
+
+.blackOverlay {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .news {
+    /* border: 1px solid red; */
+    height: 1800px;
+    width: 345px;
+    margin-bottom: 5rem;
+  }
+
+  .blackOverlay {
+    display: none;
+  }
+
+  .blackOverlayActive {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

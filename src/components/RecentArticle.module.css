@@ -1,0 +1,48 @@
+.recentArticle {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.recentArticleImage img {
+  height: 127px;
+  width: 100px;
+}
+
+.recentArticleDetails {
+  margin-left: 1.5rem;
+}
+
+h4 {
+  color: hsl(233, 8%, 79%);
+  font-size: 2rem;
+}
+
+.recentArticleTitle a {
+  color: hsl(240, 100%, 5%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 0.6rem;
+  text-decoration: none;
+  transition: all ease 0.25s;
+}
+
+.recentArticleTitle a:hover {
+  color: hsl(5, 85%, 63%);
+  transition: all ease 0.25s;
+}
+
+.recentArticleDetails p {
+  color: hsl(236, 13%, 42%);
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .recentArticle {
+    margin-bottom: 1.9rem;
+  }
+  .recentArticleDetails p {
+    line-height: 1.6rem;
+  }
+}

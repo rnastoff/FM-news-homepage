@@ -1,0 +1,104 @@
+/* Deskop */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.4rem;
+  position: static;
+}
+
+.logo {
+}
+
+.navButtons {
+  display: flex;
+  list-style-type: none;
+  position: static;
+}
+
+.navButtons a {
+  color: hsl(236, 13%, 42%);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all ease 0.25s;
+}
+
+.navButtons a:hover {
+  color: hsl(5, 85%, 63%);
+  transition: all ease 0.25s;
+}
+
+.navButtons li:not(:last-of-type) {
+  margin-right: 2.4rem;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.closeMenu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 50px;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    background: url("../images/icon-menu.svg");
+    cursor: pointer;
+    width: 40px;
+    height: 17px;
+  }
+
+  .nav {
+    margin-bottom: 2rem;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .navButtons {
+    display: none;
+    background: hsl(36, 100%, 99%);
+    flex-direction: column;
+    padding-left: 2rem;
+    height: 100vh;
+    width: 15rem;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    z-index: 2;
+  }
+
+  .navButtonsOpen {
+    display: flex;
+  }
+
+  .navButtons a {
+    color: hsl(240, 100%, 5%);
+    font-size: 1.2rem;
+  }
+
+  .navButtons li {
+    margin-bottom: 1.6rem;
+  }
+
+  .navButtons li:first-of-type {
+    margin-top: 4.8rem;
+  }
+
+  .closeMenu {
+    cursor: pointer;
+    display: block;
+    margin-top: 2rem;
+    text-align: right;
+    width: 92%;
+  }
+
+  .closeMenu img {
+    cursor: pointer;
+  }
+}
